@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Objetos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/124717692b.js" crossorigin="anonymous"></script>
+    <style>
+        .section {
+            display: none;
+        }
+        
+        ::-webkit-scrollbar{
+            display: none;
+        }
+
+        .containers{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="containers">
+            <h1>Catálogo de Comandos</h1>
+            <a href="index.html" class="btn btn-primary">Objetos</a>
+
+        </div>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="ilegal" autocomplete="off" checked> Ilegales
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="locales" autocomplete="off" checked> Locales
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="player" autocomplete="off" checked> Jugador
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="server" autocomplete="off"> Server
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="veh" autocomplete="off"> Coches
+            </label>
+           
+            <!-- <label class="btn btn-secondary">
+                <input type="radio" name="options" id="mecanico" autocomplete="off"> Mecánico
+            </label> -->
+        </div>
+
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="search" placeholder="Buscar">
+        </div>
+
+        <div class="section" id="ilegal-section">
+            <h2>/Commandos Ilegal</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Commando</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>/givegang [id]</td>
+                        <td>Dar permiso a un jugador de crear una banda</td>
+                    </tr>
+                    <tr>
+                        <td>/removegang [ID]</td>
+                        <td>Eliminar a un jugador de su banda</td>
+                    </tr>
+                    <tr>
+                        <td>/setgang [id] [gangID] [rango ej: 0, 1, 2]</td>
+                        <td>Asignar un jugador a una banda con un rango en especifico</td>
+                    </tr>
+                    <tr>
+                        <td>/ilegalpanel</td>
+                        <td>Abre el panel de Ilegal</td>
+                    </tr>
+                    <tr>
+                        <td>/creategang</td>
+                        <td>Crear una banda si tienes permiso dado previamnente con el commando /givegang [ID] </td>
+                    </tr>
+            </table>
+        </div>
+        <div class="section" id="locales-section">
+            <h2>/Commandos Locales</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Commando</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>/givebusiness [ID] [Tipo de negocio]</td>
+                        <td>Dar permiso a un jugador de crear un local</td>
+                    </tr>
+                    <tr>
+                        <td>/removebusiness [ID]</td>
+                        <td>Eliminar a un jugador de su local</td>
+                    </tr>
+                    <tr>
+                        <td>/setjob [id] [jobID] [rango ej: 0, 1, 2]</td>
+                        <td>Asignar un jugador a un trabajo con un rango en especifico</td>
+                    </tr>
+                    <tr>
+                        <td>/deletebusiness [jobID]</td>
+                        <td>Eliminar un local</td>
+                    </tr>
+                    <tr>
+                        <td>/createbusiness</td>
+                        <td>Crear un local si tienes permiso dado previamnente con el commando /givebusiness [ID] [Tipo de negocio]</td>
+                    </tr>
+                    <tr>
+                        <td>/additemsbusiness [jobID] [item] [precio] [nivel]</td>
+                        <td>Agregar items a un local</td>
+                    </tr>
+                    <tr>
+                        <td>/removeitemsbusiness [jobID] [item]</td>
+                        <td>Eliminar item de un local</td>
+                    </tr>
+                    <tr>
+                        <td>/givebusinesscar [jobID] [vehiculo]</td>
+                        <td>Añadir un vehiculo a un local</td>
+                    </tr>
+                    <tr>
+                        <td>/removebusinesscar [jobID] [matricula]</td>
+                        <td>Eliminar un vehiculo a un local</td>
+                    </tr>
+                    <tr>
+                        <td>/business</td>
+                        <td>Revisa tu local</td>
+                    </tr>
+                    <tr>
+                        <td>/mechanicadmin</td>
+                        <td>Te permite gestionar los mecanicos y sus dueños</td>
+                    </tr>
+            </table>
+        </div>
+        <div class="section" id="player-section">
+            <h2>/Commandos de Jugador</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Commando</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>/giveitem [ID] [item] [cantidad]</td>
+                        <td>Entregar un item a un jugador</td>
+                    </tr>
+                    <tr>
+                        <td>/clearinventory [ID]</td>
+                        <td>Borrar inventario de un jugador</td>
+                    </tr>
+                    <tr>
+                        <td>/givemoney [ID] [ bank / money / esencia / crypto ] [cantidad]</td>
+                        <td>Agregar dinero a un jugador en una cuenta especifica</td>
+                    </tr>
+                    <tr>
+                        <td>/seeinv [ID]</td>
+                        <td>Ver el inventario de un jugador</td>
+                    </tr>
+                    <tr>
+                        <td>/revive [ID]</td>
+                        <td>Revivir a un jugador</td>
+                    </tr>
+                    <tr>
+                        <td>/heal [ID]</td>
+                        <td>Curar a un jugador</td>
+                    </tr>
+            </table>
+        </div>
+        <div class="section" id="server-section">
+            <h2>/Comandos servidor</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Nombre Spawn</th>
+                        <th>Etiqueta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>/logout [ID]</td>
+                        <td>Desconectarte o desconectar a un jugador , para que le permita seleccionar un nuevo personaje</td>
+                    </tr>
+                    <tr>
+                        <td>/goto [ID]</td>
+                        <td>Te Teletransportas a la ubicación del ID seleccionado</td>
+                    </tr>
+                    <tr>
+                        <td>/bring [ID]</td>
+                        <td>Teletransportas a el jugador con el ID a ti mismo</td>
+                    </tr>
+                    <tr>
+                        <td>/setgroup [ID] [user/admin]</td>
+                        <td>Asignar un grupo a un jugador</td>
+                    </tr>
+                  
+                    <tr>
+                        <td>/easytime</td>
+                        <td>Te permite gestionar la hora del dia y el clima</td>
+                    </tr>
+                    <tr>
+                        <td>/pedmenu</td>
+                        <td>Te permite abrir el menu de personalizacion de personajes</td>
+                    </tr>
+                    <tr>
+                        <td>/doorlock </td>
+                        <td>Te permite gestionar / crear puertas mediante el menu</td>
+                    </tr>
+                    <tr>
+                        <td>/reports </td>
+                        <td>Te permite gestionar los reportes</td>
+                    </tr>
+                    <tr>
+                        <td>/ac [mensaje] </td>
+                        <td>Te permite comunicarte entre admins</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="section" id="veh-section">
+            <h2>/Comandos de Vehículos</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Commando</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>/givecar [ID] [matricula]</td>
+                        <td>Sirve para dar un vehiculo a un jugador , el vehiculo debe ser tuyo</td>
+                    </tr>
+                    <tr>
+                        <td>/givenewcar [ID] [Modleo]</td>
+                        <td>Sirve para dar un vehiculo nuevo a un jugador</td>
+                    </tr>
+                    <tr>
+                        <td>/admincar</td>
+                        <td>Sirve para asignar el vehiculo en el que estes montado a ti mismo , si no es de un jugador</td>
+                    </tr>
+                    <tr>
+                        <td>/conceadmin</td>
+                        <td>Abrir menu de concesionario de administradores</td>
+                    </tr>
+            </table>
+        </div>
+     
+      
+        <script>
+            const sections = document.querySelectorAll('.section');
+            const radios = document.querySelectorAll('input[name="options"]')
+
+            radios.forEach(radio => {
+                radio.addEventListener('change', () => {
+                    sections.forEach(section => {
+                        if (section.id === `${radio.id}-section`) {
+                            section.style.display = 'block';
+                        } else {
+                            section.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            const searchInput = document.getElementById('search');
+            searchInput.addEventListener('input', () => {
+                const searchTerm = searchInput.value;
+                const rows = document.querySelectorAll('tbody tr');
+                rows.forEach(row => {
+                    const labelCell = row.querySelector('td:nth-child(2)');
+                    const tdText = labelCell ? labelCell.textContent : '';
+                    if (tdText.toLowerCase().includes(searchTerm.toLowerCase())) {
+                        row.style.display = 'table-row';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Objetos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/124717692b.js" crossorigin="anonymous"></script>
+    <style>
+        .section {
+            display: none;
+        }
+        
+        ::-webkit-scrollbar{
+            display: none;
+        }
+
+        .containers{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="containers">
+            <h1>Catálogo de Objetos</h1>
+            <a href="commands.html" class="btn btn-primary">Comandos</a>
+
+        </div>
+       
+
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="blanacas" autocomplete="off" checked> Armas blancas
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="fuego" autocomplete="off" checked> Armas de fuego
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="ammo" autocomplete="off" checked> Municiones
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="comida" autocomplete="off"> Comida
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="bebida" autocomplete="off"> Bebida
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="documentos" autocomplete="off"> Documentos
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="mecanico" autocomplete="off"> Mecánico
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="objetos" autocomplete="off"> Todos los objetos
+            </label>
+        </div>
+
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="search" placeholder="Buscar">
+        </div>
+
+        <div class="section" id="blanacas-section">
+            <h2>Armas blancas</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Nombre Spawn</th>
+                        <th>Etiqueta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>weapon_unarmed</td>
+                        <td>Mano</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_dagger</td>
+                        <td>Daga</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_bat</td>
+                        <td>Bate</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_bottle</td>
+                        <td>Botella rota</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_crowbar</td>
+                        <td>Palanca</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_flashlight</td>
+                        <td>Linterna</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_golfclub</td>
+                        <td>Palo de Golf</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_hammer</td>
+                        <td>Martillo</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_hatchet</td>
+                        <td>Hacha</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_knuckle</td>
+                        <td>Puño americano</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_knife</td>
+                        <td>Cuchillo</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_perforator</td>
+                        <td>El Grandullon</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_machete</td>
+                        <td>Machete</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_switchblade</td>
+                        <td>Navaja mariposa</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_nightstick</td>
+                        <td>Porra</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_wrench</td>
+                        <td>Llave inglesa</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_battleaxe</td>
+                        <td>Hacha de combate</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_poolcue</td>
+                        <td>Palo de billar</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_briefcase</td>
+                        <td>Maletín</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="section" id="ammo-section">
+            <h2>Municiones</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Nombre Spawn</th>
+                        <th>Etiqueta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>pistol_ammo</td>
+                        <td>Municion de pistola</td>
+                    </tr>
+                    <tr>
+                        <td>rifle_ammo</td>
+                        <td>Municion de rifle</td>
+                    </tr>
+                    <tr>
+                        <td>smg_ammo</td>
+                        <td>Municion de SMG</td>
+                    </tr>
+                    <tr>
+                        <td>shotgun_ammo</td>
+                        <td>Municion de escopeta</td>
+                    </tr>
+                    <tr>
+                        <td>mg_ammo</td>
+                        <td>Municion de MG</td>
+                    </tr>
+                    <tr>
+                        <td>snp_ammo</td>
+                        <td>Municion de Francotirador</td>
+                    </tr>
+                    <tr>
+                        <td>emp_ammo</td>
+                        <td>Municion de EMP</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="section" id="fuego-section">
+            <h2>Armas de fuego</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Nombre Spawn</th>
+                        <th>Etiqueta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>weapon_pistol</td>
+                        <td>Pistola</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_pistol_mk2</td>
+                        <td>Pistola Mk2</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_combatpistol</td>
+                        <td>Pistola de combate</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_appistol</td>
+                        <td>Pistol AP</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_stungun</td>
+                        <td>Taser</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_pistol50</td>
+                        <td>Pistola .50</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_snspistol</td>
+                        <td>Pistola SNS</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_heavypistol</td>
+                        <td>Pistola pesada</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_vintagepistol</td>
+                        <td>Pistola vintage</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_flaregun</td>
+                        <td>Pistola de bengalas</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_marksmanpistol</td>
+                        <td>Pistola Marksman</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_revolver</td>
+                        <td>Revolver</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_revolver_mk2</td>
+                        <td>Revolver Mk 2</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_doubleaction</td>
+                        <td>Double Action Revolver</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_snspistol_mk2</td>
+                        <td>SNS Pistol Mk 2</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_raypistol</td>
+                        <td>Raygun</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_ceramicpistol</td>
+                        <td>Pistola cerámica</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_navyrevolver</td>
+                        <td>Navy Revolver</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_gadgetpistol</td>
+                        <td>Perico Pistol</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_pistolxm3</td>
+                        <td>Pistol XM3</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_microsmg</td>
+                        <td>Micro SMG</td>
+                    </tr>
+                    <!-- Submachine Guns -->
+                    <tr>
+                        <td>weapon_smg</td>
+                        <td>SMG</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_smg_mk2</td>
+                        <td>SMG Mk2</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_assaultsmg</td>
+                        <td>SMG de asalto</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_combatpdw</td>
+                        <td>Combat PDW</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_machinepistol</td>
+                        <td>Tec-9</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_minismg</td>
+                        <td>Mini SMG</td>
+                    </tr>
+                    <!-- Shotguns -->
+                    <tr>
+                        <td>weapon_pumpshotgun</td>
+                        <td>Escopeta</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_sawnoffshotgun</td>
+                        <td>Escopeta recortada</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_assaultshotgun</td>
+                        <td>Escopeta de asalto</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_bullpupshotgun</td>
+                        <td>Escopeta bullpup</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_musket</td>
+                        <td>Mosquete</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_heavyshotgun</td>
+                        <td>Escopeta pesada</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_dbshotgun</td>
+                        <td>Escopeta de doble cañon</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_autoshotgun</td>
+                        <td>Escopeta automatica</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_pumpshotgun_mk2</td>
+                        <td>Escopeta Mk II</td>
+                    </tr>
+                    <tr>
+                        <td>weapon_combatshotgun</td>
+                        <td>Escopeta de combate</td>
+                    </tr>
+                 
+                </tbody>
+            </table>
+        </div>
+        <div class="section" id="objetos-section">
+            <h2>Objetos</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Nombre Spawn</th>
+                        <th>Etiqueta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>lockpick</td>
+                        <td>Ganzúa</td>
+                    </tr>
+                    <tr>
+                        <td>advancedlockpick</td>
+                        <td>Ganzúa avanzada</td>
+                    </tr>
+                    <tr>
+                        <td>electronickit</td>
+                        <td>Kit electrónico</td>
+                    </tr>
+                    <tr>
+                        <td>gatecrack</td>
+                        <td>Gatecrack</td>
+                    </tr>
+                    <tr>
+                        <td>thermite</td>
+                        <td>Thermite</td>
+                    </tr>
+                    <tr>
+                        <td>trojan_usb</td>
+                        <td>USB de hackeo</td>
+                    </tr>
+                    <tr>
+                        <td>screwdriverset</td>
+                        <td>Kit de herramientas</td>
+                    </tr>
+                    <tr>
+                        <td>drill</td>
+                        <td>Taladro</td>
+                    </tr>
+                    <tr>
+                        <td>headbag</td>
+                        <td>Bolsa para la cabeza</td>
+                    </tr>
+                    <tr>
+                        <td>latigo</td>
+                        <td>Látigo de cuero</td>
+                    </tr>
+                    <tr>
+                        <td>esposas_peluche</td>
+                        <td>Esposas de cuero</td>
+                    </tr>
+                    <tr>
+                        <td>longboard</td>
+                        <td>Skate</td>
+                    </tr>
+                    <tr>
+                        <td>firework_1</td>
+                        <td>firework_1</td>
+                    </tr>
+                    <tr>
+                        <td>firework_2</td>
+                        <td>firework_2</td>
+                    </tr>
+                    <tr>
+                        <td>firework_3</td>
+                        <td>firework_3</td>
+                    </tr>
+                    <tr>
+                        <td>firework_4</td>
+                        <td>firework_4</td>
+                    </tr>
+                    <tr>
+                        <td>fontain_4</td>
+                        <td>fontain_4</td>
+                    </tr>
+                    <tr>
+                        <td>firework_extra</td>
+                        <td>firework_extra</td>
+                    </tr>
+                    <tr>
+                        <td>speaker</td>
+                        <td>Altavoz</td>
+                    </tr>
+                    <tr>
+                        <td>corazones</td>
+                        <td>Corazones de alambre</td>
+                    </tr>
+                    <tr>
+                        <td>megaphone</td>
+                        <td>Megáfono</td>
+                    </tr>
+                    <tr>
+                        <td>kq_airdrop_flare</td>
+                        <td>Señal de paquete aéreo</td>
+                    </tr>
+                    <tr>
+                        <td>trofeo_box</td>
+                        <td>Trofeo ganador del evento</td>
+                    </tr>
+                    <tr>
+                        <td>lost_letter</td>
+                        <td>Carta sellada</td>
+                    </tr>
+                    <tr>
+                        <td>carta</td>
+                        <td>Carta sellada</td>
+                    </tr>
+                    <tr>
+                        <td>reliquia</td>
+                        <td>Reliquia antigua</td>
+                    </tr>
+                    <tr>
+                        <td>maletin</td>
+                        <td>Maletín misterioso</td>
+                    </tr>
+                    <tr>
+                        <td>armamento</td>
+                        <td>Armamento</td>
+                    </tr>
+                    <tr>
+                        <td>paquete</td>
+                        <td>Caja misteriosa</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="section" id="comida-section">
+            <h2>Alimentos</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Nombre Spawn</th>
+                        <th>Etiqueta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>sandwich</td>
+                        <td>Sandwich</td>
+                    </tr>
+                    <tr>
+                        <td>tosti</td>
+                        <td>Sandwich de queso</td>
+                    </tr>
+                    <tr>
+                        <td>twerks_candy</td>
+                        <td>Twerks</td>
+                    </tr>
+                    <tr>
+                        <td>snikkel_candy</td>
+                        <td>Snikkel</td>
+                    </tr>
+                    <tr>
+                        <td>durum</td>
+                        <td>Durum</td>
+                    </tr>
+                    <tr>
+                        <td>aceitunas</td>
+                        <td>Aceitunas</td>
+                    </tr>
+                    <tr>
+                        <td>cooked_meat</td>
+                        <td>Carne cocida</td>
+                    </tr>
+                    <tr>
+                        <td>jamonserrano</td>
+                        <td>Jamon serrano</td>
+                    </tr>
+                    <tr>
+                        <td>churros</td>
+                        <td>Churros</td>
+                    </tr>
+                    <tr>
+                        <td>sopa</td>
+                        <td>Sopa de picadillo</td>
+                    </tr>
+                    <tr>
+                        <td>bocadillo</td>
+                        <td>Bocadillo</td>
+                    </tr>
+                    <tr>
+                        <td>patatas_fritas</td>
+                        <td>Patatas fritas</td>
+                    </tr>
+                    <tr>
+                        <td>regaliz</td>
+                        <td>Caramelos de regaliz</td>
+                    </tr>
+                    <tr>
+                        <td>hbj</td>
+                        <td>Smash de Jabalí</td>
+                    </tr>
+                    <tr>
+                        <td>marmitako</td>
+                        <td>Marmitako</td>
+                    </tr>
+                    <tr>
+                        <td>crispy</td>
+                        <td>Patatas Crispy</td>
+                    </tr>
+                    <tr>
+                        <td>dona</td>
+                        <td>Dona Chipblue</td>
+                    </tr>
+                    <tr>
+                        <td>chocolatina</td>
+                        <td>Chocolatina del Airking</td>
+                    </tr>
+                    <tr>
+                        <td>chiclemelon</td>
+                        <td>Chicle de melon</td>
+                    </tr>
+                    <tr>
+                        <td>pizzaslice</td>
+                        <td>Trozo de pizza margarita</td>
+                    </tr>
+                    <tr>
+                        <td>popcorns</td>
+                        <td>Palomitas</td>
+                    </tr>
+                    <tr>
+                        <td>cheesecake</td>
+                        <td>Tarta de queso</td>
+                    </tr>
+                    <tr>
+                        <td>carrotcake</td>
+                        <td>Tarta de zanahoria</td>
+                    </tr>
+                    <tr>
+                        <td>nachoscheese</td>
+                        <td>Nachos con queso</td>
+                    </tr>
+                    <tr>
+                        <td>salad</td>
+                        <td>Ensalada</td>
+                    </tr>
+                    <tr>
+                        <td>nigiri_salmon</td>
+                        <td>Nigiri salmon</td>
+                    </tr>
+                    <tr>
+                        <td>nigiri_atun</td>
+                        <td>Nigiri atun</td>
+                    </tr>
+                    <tr>
+                        <td>hamburger</td>
+                        <td>Hamburguesa</td>
+                    </tr>
+                    <tr>
+                        <td>cachopo</td>
+                        <td>Cachopo</td>
+                    </tr>
+                    <tr>
+                        <td>casino_burger</td>
+                        <td>Casino burger</td>
+                    </tr>
+                    <tr>
+                        <td>casino_donut</td>
+                        <td>Casino donut</td>
+                    </tr>
+                    <tr>
+                        <td>fingers</td>
+                        <td>Fingers de pollo</td>
+                    </tr>
+                    <tr>
+                        <td>tortilla</td>
+                        <td>Tortilla</td>
+                    </tr>
+                    <!-- Agrega más filas aquí -->
+                </tbody>
+            </table>
+        </div>
+        <div class="section" id="bebida-section">
+            <h2>Bebida</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Nombre Spawn</th>
+                        <th>Etiqueta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>water_bottle</td>
+                        <td>Agua</td>
+                    </tr>
+                    <tr>
+                        <td>choco</td>
+                        <td>Batido de Chocolate</td>
+                    </tr>
+                    <tr>
+                        <td>elixtea</td>
+                        <td>Elixtea</td>
+                    </tr>
+                    <tr>
+                        <td>kurkakola</td>
+                        <td>Cola</td>
+                    </tr>
+                    <tr>
+                        <td>coffee</td>
+                        <td>café</td>
+                    </tr>
+                    <tr>
+                        <td>horchata</td>
+                        <td>Horchata</td>
+                    </tr>
+                    <tr>
+                        <td>gazpacho</td>
+                        <td>Gazpacho</td>
+                    </tr>
+                    <tr>
+                        <td>icetealimon</td>
+                        <td>Icetea de Limón</td>
+                    </tr>
+                    <tr>
+                        <td>leche</td>
+                        <td>Leche</td>
+                    </tr>
+                    <tr>
+                        <td>energydrink</td>
+                        <td>Elixir Burst</td>
+                    </tr>
+                    <tr>
+                        <td>grapejuice</td>
+                        <td>Zumo de uva</td>
+                    </tr>
+                    <tr>
+                        <td>applejuice</td>
+                        <td>Zumo de manzana</td>
+                    </tr>
+                    <tr>
+                        <td>orangejuice</td>
+                        <td>Zumo de naranja</td>
+                    </tr>
+                    <tr>
+                        <td>casino_coffee</td>
+                        <td>Casino Coffee</td>
+                    </tr>
+                    <tr>
+                        <td>casino_coke</td>
+                        <td>Casino Kofola</td>
+                    </tr>
+                    <!-- <tr>
+                        <td>crispy</td>
+                        <td>Patatas Crispy</td>
+                    </tr>
+                    <tr>
+                        <td>dona</td>
+                        <td>Dona Chipblue</td>
+                    </tr>
+                    <tr>
+                        <td>chocolatina</td>
+                        <td>Chocolatina del Airking</td>
+                    </tr>
+                    <tr>
+                        <td>chiclemelon</td>
+                        <td>Chicle de melon</td>
+                    </tr>
+                    <tr>
+                        <td>pizzaslice</td>
+                        <td>Trozo de pizza margarita</td>
+                    </tr>
+                    <tr>
+                        <td>popcorns</td>
+                        <td>Palomitas</td>
+                    </tr>
+                    <tr>
+                        <td>cheesecake</td>
+                        <td>Tarta de queso</td>
+                    </tr>
+                    <tr>
+                        <td>carrotcake</td>
+                        <td>Tarta de zanahoria</td>
+                    </tr>
+                    <tr>
+                        <td>nachoscheese</td>
+                        <td>Nachos con queso</td>
+                    </tr>
+                    <tr>
+                        <td>salad</td>
+                        <td>Ensalada</td>
+                    </tr>
+                    <tr>
+                        <td>nigiri_salmon</td>
+                        <td>Nigiri salmon</td>
+                    </tr>
+                    <tr>
+                        <td>nigiri_atun</td>
+                        <td>Nigiri atun</td>
+                    </tr>
+                    <tr>
+                        <td>hamburger</td>
+                        <td>Hamburguesa</td>
+                    </tr>
+                    <tr>
+                        <td>cachopo</td>
+                        <td>Cachopo</td>
+                    </tr>
+                    <tr>
+                        <td>casino_burger</td>
+                        <td>Casino burger</td>
+                    </tr>
+                    <tr>
+                        <td>casino_donut</td>
+                        <td>Casino donut</td>
+                    </tr>
+                    <tr>
+                        <td>fingers</td>
+                        <td>Fingers de pollo</td>
+                    </tr>
+                    <tr>
+                        <td>tortilla</td>
+                        <td>Tortilla</td>
+                    </tr> -->
+                    <!-- Agrega más filas aquí -->
+                </tbody>
+            </table>
+        </div>
+        <div class="section" id="documentos-section">
+            <h2>Documentos</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Nombre Spawn</th>
+                        <th>Etiqueta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>id_card</td>
+                        <td>Tarjeta ID</td>
+                    </tr>
+                    <tr>
+                        <td>driver_license</td>
+                        <td>Licencia de conducir</td>
+                    </tr>
+                    <tr>
+                        <td>fly_license</td>
+                        <td>Licencia de vuelo</td>
+                    </tr>
+                    <tr>
+                        <td>weaponlicense</td>
+                        <td>Licencia de armas</td>
+                    </tr>
+                    <!-- Agrega más filas aquí -->
+                </tbody>
+            </table>
+        </div>
+        <div class="section" id="mecanico-section">
+            <h2>Mecánico</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Nombre Spawn</th>
+                        <th>Etiqueta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>engine_oil</td>
+                        <td>Aceite de motor</td>
+                    </tr>
+                    <tr>
+                        <td>tyre_replacement</td>
+                        <td>Neumático de reemplazo</td>
+                    </tr>
+                    <tr>
+                        <td>clutch_replacement</td>
+                        <td>Reemplazo del embrague</td>
+                    </tr>
+                    <tr>
+                        <td>air_filter</td>
+                        <td>Filtro de aire</td>
+                    </tr>
+                    <tr>
+                        <td>spark_plug</td>
+                        <td>Bujía</td>
+                    </tr>
+                    <tr>
+                        <td>suspension_parts</td>
+                        <td>Pieza de suspensión</td>
+                    </tr>
+                    <tr>
+                        <td>brakepad_replacement</td>
+                        <td>Pastillas de freno</td>
+                    </tr>
+                    <tr>
+                        <td>i4_engine</td>
+                        <td>Motor I4</td>
+                    </tr>
+                    <tr>
+                        <td>v6_engine</td>
+                        <td>Motor V6</td>
+                    </tr>
+                    <tr>
+                        <td>v8_engine</td>
+                        <td>Motor V8</td>
+                    </tr>
+                    <tr>
+                        <td>v12_engine</td>
+                        <td>Motor V12</td>
+                    </tr>
+                    <tr>
+                        <td>turbocharger</td>
+                        <td>Turbo</td>
+                    </tr>
+                    <tr>
+                        <td>ev_motor</td>
+                        <td>Motor electrico</td>
+                    </tr>
+                    <tr>
+                        <td>ev_battery</td>
+                        <td>Bateria electrica</td>
+                    </tr>
+                    <tr>
+                        <td>ev_coolant</td>
+                        <td>Refrigerante EV</td>
+                    </tr>
+                    <tr>
+                        <td>awd_drivetrain</td>
+                        <td>Transmisión 4x4</td>
+                    </tr>
+                    <tr>
+                        <td>rwd_drivetrain</td>
+                        <td>Transmisión RWD</td>
+                    </tr>
+                    <tr>
+                        <td>fwd_drivetrain</td>
+                        <td>Transmisión FWD</td>
+                    </tr>
+                    <tr>
+                        <td>slick_tyres</td>
+                        <td>Neumáticos resbaladizos</td>
+                    </tr>
+                    <tr>
+                        <td>semi_slick_tyres</td>
+                        <td>Neumáticos semi-resbaladizos</td>
+                    </tr>
+                    <tr>
+                        <td>offroad_tyres</td>
+                        <td>Neumáticos todoterreno</td>
+                    </tr>
+                    <tr>
+                        <td>ceramic_brakes</td>
+                        <td>Frenos cerámicos</td>
+                    </tr>
+                    <tr>
+                        <td>drift_tuning_kit</td>
+                        <td>Kit de ajuste de drift</td>
+                    </tr>
+                    <tr>
+                        <td>catalizador</td>
+                        <td>Catalizador</td>
+                    </tr>
+                    <tr>
+                        <td>lighting_controller</td>
+                        <td>Controlador de iluminación</td>
+                    </tr>
+                    <tr>
+                        <td>kit_leds</td>
+                        <td>Kit de instalacion de leds</td>
+                    </tr>
+                    <tr>
+                        <td>stancing_kit</td>
+                        <td>Kit de posición</td>
+                    </tr>
+                    <tr>
+                        <td>cosmetic_part</td>
+                        <td>Kit de carrocería</td>
+                    </tr>
+                    <tr>
+                        <td>respray_kit</td>
+                        <td>Kit de repintado</td>
+                    </tr>
+                    <tr>
+                        <td>vehicle_wheels</td>
+                        <td>Juego de ruedas para vehículos</td>
+                    </tr>
+                    <tr>
+                        <td>tyre_smoke_kit</td>
+                        <td>Kit de humo de neumáticos</td>
+                    </tr>
+                    <tr>
+                        <td>bulletproof_tyres</td>
+                        <td>Neumáticos a prueba de balas</td>
+                    </tr>
+                    <tr>
+                        <td>extras_kit</td>
+                        <td>Kit de extras</td>
+                    </tr>
+                    <tr>
+                        <td>nitrous_bottle</td>
+                        <td>Botella de nitro</td>
+                    </tr>
+                    <tr>
+                        <td>empty_nitrous_bottle</td>
+                        <td>Botella de nitro vacía</td>
+                    </tr>
+                    <tr>
+                        <td>nitrous_install_kit</td>
+                        <td>Kit de óxido nitroso</td>
+                    </tr>
+                    <tr>
+                        <td>cleaning_kit</td>
+                        <td>Kit de limpieza</td>
+                    </tr>
+                    <tr>
+                        <td>repair_kit</td>
+                        <td>Kit de reparación</td>
+                    </tr>
+                    <tr>
+                        <td>duct_tape</td>
+                        <td>Cinta adhesiva</td>
+                    </tr>
+                    <tr>
+                        <td>performance_part</td>
+                        <td>Parte de rendimiento</td>
+                    </tr>
+                    <tr>
+                        <td>mechanic_tablet</td>
+                        <td>Tableta de Mecánico</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script>
+            const sections = document.querySelectorAll('.section');
+            const radios = document.querySelectorAll('input[name="options"]')
+
+            radios.forEach(radio => {
+                radio.addEventListener('change', () => {
+                    sections.forEach(section => {
+                        if (section.id === `${radio.id}-section`) {
+                            section.style.display = 'block';
+                        } else {
+                            section.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            const searchInput = document.getElementById('search');
+            searchInput.addEventListener('input', () => {
+                const searchTerm = searchInput.value;
+                const rows = document.querySelectorAll('tbody tr');
+                rows.forEach(row => {
+                    const labelCell = row.querySelector('td:nth-child(2)');
+                    const tdText = labelCell ? labelCell.textContent : '';
+                    if (tdText.toLowerCase().includes(searchTerm.toLowerCase())) {
+                        row.style.display = 'table-row';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>
+
